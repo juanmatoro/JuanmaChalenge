@@ -29,25 +29,33 @@
             </p>
         </hgroup>
 
-        <div class="rating-options" role="radiogroup" aria-label="Calificación">
-          <button class="rating-btn" type="button" data-score="1" role="radio" aria-checked="false">
-            1
-          </button>
-          <button class="rating-btn" type="button" data-score="2" role="radio" aria-checked="false">
-            2
-          </button>
-          <button class="rating-btn" type="button" data-score="3" role="radio" aria-checked="false">
-            3
-          </button>
-          <button class="rating-btn" type="button" data-score="4" role="radio" aria-checked="false">
-            4
-          </button>
-          <button class="rating-btn" type="button" data-score="5" role="radio" aria-checked="false">
-            5
-          </button>
-        </div>
+               <form id="rating-form">
+          <fieldset class="rating-options">
+            <legend class="sr-only">Valoración de 1 a 5</legend>
+            <label class="rating-option">
+              <input class="rating-input" type="radio" name="score" value="1" required />
+              <span class="rating-btn">1</span>
+            </label>
+            <label class="rating-option">
+              <input class="rating-input" type="radio" name="score" value="2" />
+              <span class="rating-btn">2</span>
+            </label>
+            <label class="rating-option">
+              <input class="rating-input" type="radio" name="score" value="3" />
+              <span class="rating-btn">3</span>
+            </label>
+            <label class="rating-option">
+              <input class="rating-input" type="radio" name="score" value="4" />
+              <span class="rating-btn">4</span>
+            </label>
+            <label class="rating-option">
+              <input class="rating-input" type="radio" name="score" value="5" />
+              <span class="rating-btn">5</span>
+            </label>
+          </fieldset>
 
-        <button class="submit-btn" type="button" id="submit-rating">Enviar</button>
+          <button class="submit-btn" type="submit">SUBMIT</button>
+        </form>
       </section>
 
       <section class="card card-thanks is-hidden" id="thanks-card" aria-live="polite">
