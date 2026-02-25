@@ -25,7 +25,7 @@ body {
   color: var(--light-grey);
 }
 
-.app {
+main {
   width: min(100%, 23.4rem);
 }
 
@@ -120,14 +120,6 @@ body {
   height: auto;
 }
 
-.selected-message {
-  display: inline-block;
-  margin: 1.35rem 0 0;
-  padding: 0.25rem 0.95rem 0.15rem;
-  border-radius: 999px;
-  color: var(--primary);
-  background: var(--button-bg);
-}
 
 .card-thanks h2 {
   margin-top: 1.65rem;
