@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>JMChallenge - Rating Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <section class="card card-rating" aria-labelledby="rating-title">
+          <hgroup>
+            <div class="icon-wrap" aria-hidden="true">
+              <img src="./images/icon-star.svg" alt="" />
+            </div>
+        
+            <h1 id="rating-title">¿Cómo lo hicimos?</h1>
+            <p>
+              Por favor, háznos saber cómo lo hicimos con tu solicitud de soporte. Todos los comentarios son apreciados para
+              ayudarnos a mejorar nuestra oferta.
+            </p>
+        </hgroup>
+
+        <div class="rating-options" role="radiogroup" aria-label="Calificación">
+          <button class="rating-btn" type="button" data-score="1" role="radio" aria-checked="false">
+            1
+          </button>
+          <button class="rating-btn" type="button" data-score="2" role="radio" aria-checked="false">
+            2
+          </button>
+          <button class="rating-btn" type="button" data-score="3" role="radio" aria-checked="false">
+            3
+          </button>
+          <button class="rating-btn" type="button" data-score="4" role="radio" aria-checked="false">
+            4
+          </button>
+          <button class="rating-btn" type="button" data-score="5" role="radio" aria-checked="false">
+            5
+          </button>
+        </div>
+
+        <button class="submit-btn" type="button" id="submit-rating">Enviar</button>
+      </section>
+
+      <section class="card card-thanks is-hidden" id="thanks-card" aria-live="polite">
+        <img
+          class="thanks-illustration"
+          src="./images/illustration-thank-you.svg"
+          alt="foto de gracias"
+        />
+        <p class="selected-message">Seleccionaste <span id="selected-score">0</span> de 5</p>
+        <h2>Gracias</h2>
+        <p>
+          Apreciamos que te tomes el tiempo para dar una calificación. Si alguna vez necesitas más soporte, no dudes en ponerte en contacto con nosotros.
+        </p>
+      </section>
+    </main>
+  </body>
 </html>
