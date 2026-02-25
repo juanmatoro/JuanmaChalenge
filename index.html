@@ -1,9 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <title>JMChallenge - Rating Component</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,58 +21,90 @@
   </head>
   <body>
     <main class="app">
-      <section class="card card-rating" aria-labelledby="rating-title">
-          <hgroup>
-            <div class="icon-wrap" aria-hidden="true">
-              <img src="./images/icon-star.svg" alt="" />
-            </div>
-        
-            <h1 id="rating-title">¿Cómo lo hicimos?</h1>
-            <p>
-              Por favor, háznos saber cómo lo hicimos con tu solicitud de soporte. Todos los comentarios son apreciados para
-              ayudarnos a mejorar nuestra oferta.
-            </p>
+      <section class="card card-rating" >
+          <div class="icon-wrap" >
+            <img src="./images/icon-star.svg" alt="" />
+          </div>
+
+        <hgroup>
+          <h1 id="rating-title">¿Cómo lo hicimos?</h1>
+          <p>
+            Por favor, háznos saber cómo lo hicimos con tu solicitud de soporte.
+            Todos los comentarios son apreciados para ayudarnos a mejorar
+            nuestra oferta.
+          </p>
         </hgroup>
 
-               <form id="rating-form">
-          <fieldset class="rating-options">
-            <legend class="sr-only">Valoración de 1 a 5</legend>
-            <label class="rating-option">
-              <input class="rating-input" type="radio" name="score" value="1" required />
-              <span class="rating-btn">1</span>
-            </label>
-            <label class="rating-option">
-              <input class="rating-input" type="radio" name="score" value="2" />
-              <span class="rating-btn">2</span>
-            </label>
-            <label class="rating-option">
-              <input class="rating-input" type="radio" name="score" value="3" />
-              <span class="rating-btn">3</span>
-            </label>
-            <label class="rating-option">
-              <input class="rating-input" type="radio" name="score" value="4" />
-              <span class="rating-btn">4</span>
-            </label>
-            <label class="rating-option">
-              <input class="rating-input" type="radio" name="score" value="5" />
-              <span class="rating-btn">5</span>
-            </label>
-          </fieldset>
+        <form id="rating-form">
+          <div
+            class="rating-options"
+            role="group"
+            aria-label="Rate from 1 to 5"
+          >
+            <button
+              class="rating-btn"
+              type="button"
+              data-score="1"
+              
+            >
+              1
+            </button>
+            <button
+              class="rating-btn"
+              type="button"
+              data-score="2"
+        
+            >
+              2
+            </button>
+            <button
+              class="rating-btn"
+              type="button"
+              data-score="3"
+              
+            >
+              3
+            </button>
+            <button
+              class="rating-btn"
+              type="button"
+              data-score="4"
+             
+            >
+              4
+            </button>
+            <button
+              class="rating-btn"
+              type="button"
+              data-score="5"
+        
+            >
+              5
+            </button>
+          </div>
 
           <button class="submit-btn" type="submit">SUBMIT</button>
         </form>
       </section>
 
-      <section class="card card-thanks is-hidden" id="thanks-card" aria-live="polite">
+      <section
+        class="card card-thanks is-hidden"
+        id="thanks-card"
+        aria-live="polite"
+      >
         <img
           class="thanks-illustration"
           src="./images/illustration-thank-you.svg"
           alt="foto de gracias"
         />
-        <p class="selected-message">Seleccionaste <span id="selected-score">0</span> de 5</p>
+        <p class="selected-message">
+          Seleccionaste <span id="selected-score">0</span> de 5
+        </p>
         <h2>Gracias</h2>
         <p>
-          Apreciamos que te tomes el tiempo para dar una calificación. Si alguna vez necesitas más soporte, no dudes en ponerte en contacto con nosotros.
+          Apreciamos que te tomes el tiempo para dar una calificación. Si alguna
+          vez necesitas más soporte, no dudes en ponerte en contacto con
+          nosotros.
         </p>
       </section>
     </main>
