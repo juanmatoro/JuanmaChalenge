@@ -1,7 +1,7 @@
-const ratingForm = document.getElementById("rating-form");
+const ratingForm = document.querySelector("#rating-form");
 const ratingCard = document.querySelector(".card-rating");
-const thanksCard = document.getElementById("thanks-card");
-const selectedScoreEl = document.getElementById("selected-score");
+const thanksCard = document.querySelector(".card-thanks");
+const selectedScoreEl = document.querySelector("#selected-score");
 const ratingButtons = document.querySelectorAll(".rating-btn[data-score]");
 
 let selectedScore = "";
